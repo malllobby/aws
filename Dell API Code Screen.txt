@@ -1,0 +1,24 @@
+API Design:
+API Version: v1
+GET : /v1/fibonacci/get/{number}
+type: application/json
+Response:
+{
+
+"results":['0','1','1','2','3','5'],
+"status_code": 200
+}
+
+Error Response:
+{
+
+"Exception": {"message"},
+"status_code" : [errorcode]
+}
+
+Response Status Codes:
+NEGATIVE_CODE: 400
+SUCCESS_CODE: 200
+FORBIDDEN_CODE: 405
+
+CACHE_LIMIT_EXCEEDED_CODE: 414
